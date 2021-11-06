@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" id="pagepilingcss" href="css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>CocaCola</title>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="header_container">
+            <div class="header__logo">
+                <a href="#" data-svg="img/logo.svg"></a>
+            </div>
+
+            <menu id="myMenu" class="menu_top">
+                <li><a href="#Main" data-text="Main"><span>Main</span> </a></li>
+                <li><a href="#About" data-text="About"><span>About</span></a></li>
+                <li><a href="" data-text="Products"><span>Products</span></a></li>
+                <li><a href="#Contacts" data-text="Contacts"><span>Contacts</span></a></li>
+            </menu>
+            <div id="circularMenu" class="circular-menu">
+
+                <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+                    <span id="bar1" class="bar"></span>
+                    <span id="bar2" class="bar"></span>
+                    <span id="bar3" class="bar"></span>
+
+                </a>
+
+                <menu class="items-wrapper">
+                    <li><a href="#Main" data-text="Main" class="menu-item "><span>Main</span> </a></li>
+                    <li><a href="#About" data-text="About" class="menu-item "><span>About</span></a></li>
+                    <li><a href="" data-text="Products" class="menu-item "><span>Products</span></a></li>
+                    <li><a href="#Contacts" data-text="Contacts" class="menu-item "><span>Contacts</span></a></li>
+                </menu>
+
+            </div>
+        </div>
+
+    </header>
+    <div id="pagepiling">
+        <section class="section main" id="Main">
+            <div class="snow">
+                <div class="main__list">
+                    <div class="main__left">
+                        <h1>Main Site Title</h1>
+                        <h3>Lorem ipsum descripsum</h3>
+                        <a href="#" class="btn">Call to action</a>
+                    </div>
+                    <div class="main__right">
+                        <div class="main__right-message" style="display: none;"><span> How how how !!! <br> Like it? <br> Scroll down for more !</span></div>
+                        <img src="img/santa_main.png" alt="santa_main">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="snowflake">
+                <img src="img/snowflake.png">
+            </div>
+        </section>
+        <section class="section about" id="About">
+            <div class="snowflake">
+                <img src="img/snowflake.png">
+            </div>
+            <div class="snow">
+                <div class="about__list">
+                    <div class="about__left">
+                        <h2>At least somewhere you can feel new year atmosphere</h2>
+                        <h4>Choose your present:</h4>
+                        <div class="about__left-list">
+                            <button href="#" class="present active" value="btn1"><img src="img/new-year-sock.png"></button>
+                            <button href="#" class="present" value="btn2"><img src="img/caps-2.png"></button>
+                            <button href="#" class="present" value="btn3"><img src="img/new-year-bag.png"></button>
+                        </div>
+                    </div>
+                    <div class="about__right">
+                        <div class="present_btn" id="btn1">
+                            <div class="about_content">
+                                <div class="about_content-text">
+                                    <h4>Best sock ever</h4>
+                                    <p>Reuglar sock have no present inside Lorem Ipsum is simply dumm y text of the printing and types et0ting industry. Lorem </p>
+                                </div>
+                                <img src="img/new-year-sock2.png">
+                            </div>
+                        </div>
+                        <div class="present_btn" id="btn2">
+                            <div class="about_content">
+                                <div class="about_content-text">
+                                    <h4>Best sock ever</h4>
+                                    <p>Reuglar sock have no present inside Lorem Ipsum is simply dumm y text of the printing and types et0ting industry. Lorem </p>
+                                </div>
+                                <img src="img/caps-2.png">
+                            </div>
+                        </div>
+                        <div class="present_btn" id="btn3">
+                            <div class="about_content">
+                                <div class="about_content-text">
+                                    <h4>Best sock ever</h4>
+                                    <p>Reuglar sock have no present inside Lorem Ipsum is simply dumm y text of the printing and types et0ting industry. Lorem </p>
+                                </div>
+                                <img src="img/new-year-bag.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="section contacts" id="Contacts">
+            <div class="snow">
+                <div class="contacts__content">
+                    <h2>Write us for real presents</h2>
+                    <form action="">
+                        <div class="form__top">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Phone">
+                            <div class="select">
+                                <input class="select__input" type="hidden" name="">
+                                <div class="select__head">Gender</div>
+                                <ul class="select__list" style="display: none;">
+                                    <li class="select__item">Boy</li>
+                                    <li class="select__item">Girl</li>
+                                </ul>
+                            </div>
+                            <input type="text" placeholder="Email">
+                        </div>
+
+                        <textarea placeholder="Your witsh" name="" id=""></textarea>
+                        <div class="form_conditions">
+                            <input type="checkbox" id="check" name="check" />
+                            <label for="check">Whant Coca-cola with present ?</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+</body>
+<script src="js/jquery.pagepiling.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
